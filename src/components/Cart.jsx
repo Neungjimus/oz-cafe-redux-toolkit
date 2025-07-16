@@ -66,7 +66,7 @@ function Cart() {
             const menuItem = allMenus.find((mItem) => mItem.id === el.id);
             return (
               <CartItem
-                key={el.id}
+                key={el.uniqueCartId}
                 item={menuItem}
                 options={el.options}
                 quantity={el.quantity}
